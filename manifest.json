@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "infoverse",
+  "version": "1.0",
+  "description": "Save and organize highlights from reading the web",
+  "permissions": ["sidePanel", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon.svg",
+      "32": "images/icon.svg",
+      "48": "images/icon.svg",
+      "128": "images/icon.svg"
+    },
+    "default_title": "Open InfoVerse"
+  },
+  "icons": {
+    "16": "images/icon.svg",
+    "32": "images/icon.svg",
+    "48": "images/icon.svg",
+    "128": "images/icon.svg"
+  }
+}

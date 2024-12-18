@@ -1,0 +1,11 @@
+{
+  "name": "infoverse-chrome-ext",
+  "version": "1.0.0",
+  "description": "chrome extension that helps users of infoverse save text and url snippets along with personal notes",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
