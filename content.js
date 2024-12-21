@@ -12,7 +12,7 @@ document.addEventListener("mouseup", function (event) {
   const selection = window.getSelection();
   const selectedText = selection.toString().trim();
 
-  if (selectedText) {
+  if (selectedText && event.metaKey && event.shiftKey) {
     lastHighlightedText = selectedText;
     currentSelection = selection;
     showTooltip(event.clientX, event.clientY, selectedText);
